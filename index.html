@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Harmanpreet Singh Portfolio | COMP2148 Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/api/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* --- CSS STYLING --- */
+        :root {
+            --primary-dark: #2c3e50;
+            --accent-red: #c0392b;
+            --bg-light: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Section 5: Navigation Bar / Table of Contents */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px 0;
+            margin: 0;
+        }
+
+        nav ul li { margin: 0 20px; }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--primary-dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover { color: var(--accent-red); }
+
+        /* Header / Hero */
+        header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #34495e 100%);
+            color: white;
+            padding: 120px 10% 60px;
+            text-align: center;
+        }
+
+        header h1 { margin: 0; font-size: 2.8rem; letter-spacing: 2px; }
+        header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+
+        /* Content Containers */
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        
+        section {
+            background: var(--white);
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--accent-red);
+            display: inline-block;
+            margin-bottom: 25px;
+            color: var(--primary-dark);
+            padding-bottom: 5px;
+        }
+
+        /* Section 3: Project Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--accent-red); }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--primary-dark);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover { background: var(--accent-red); }
+
+        .btn-small { padding: 8px 15px; font-size: 0.9rem; margin-right: 10px; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary-dark);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav ul { flex-direction: column; text-align: center; }
+            nav ul li { margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#resume">Resume & Skills</a></li>
+            <li><a href="#work">Work Samples</a></li>
+            <li><a href="#education">Education & Documents</a></li>
+        </ul>
+    </nav>
+
+    <header id="profile">
+        <h1>Harmanpreet Singh</h1>
+        <p>RPA developer | Software Development Student</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                As a dedicated student specializing in technology-driven solutions, I focus on bridging the gap between manual processes and digital efficiency. 
+                My expertise includes <strong>Robotic Process Automation (RPA)</strong>, <strong>No-Code App Development</strong>, and maintaining high standards of 
+                operational compliance, including <strong>Advanced Food Safety certification</strong>. I am committed to leveraging my technical toolkit to 
+                deliver high-impact results for enterprise environments.
+            </p>
+        </section>
+
+        <section id="resume">
+            <h2>Skills & Resume</h2>
+            <p>Comprehensive knowledge of automation tools and software design logic.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Technical Stack</h3>
+                    <ul>
+                        <li>UiPath & Automation Cloud</li>
+                        <li>Microsoft AI Builder</li>
+                        <li>AppSheet & Softr (No-Code)</li>
+                        <li>Data Handling & Logic</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Professional Assets</h3>
+                    <ul>
+                        <li>SafeCheck Advanced Food Safety</li>
+                        <li>Problem Solving & Optimization</li>
+                        <li>Professional English Communication</li>
+                        <li>Customer Service Excellence</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <a href="resume.pdf" target="_blank" class="btn"><i class="fas fa-file-pdf"></i> View Official Resume</a>
+        </section>
+
+        <section id="work">
+            <h2>Work Samples</h2>
+            <p>Demonstrating functional expertise through practical projects.</p>
+            <div class="grid">
+                <div class="card">
+                    <img src="project1.png" alt="Automation Workflow Screenshot">
+                    <h3>RPA Data Extraction Bot</h3>
+                    <p>A custom UiPath workflow built to extract invoice data and automate database entry, reducing manual labor by 60%.</p>
+                </div>
+                <div class="card">
+                    <img src="project2.png" alt="App Interface Screenshot">
+                    <h3>Inventory Management System</h3>
+                    <p>Designed a cross-platform mobile application using AppSheet for real-time stock tracking and automated reorder alerts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education & Acknowledgements</h2>
+            <div class="card" style="border:none; padding:0;">
+                <h3>Academic Credentials</h3>
+                <ul>
+                    <li><strong>Diploma in Computer Programming: Low code Development</strong> – George Brown College (In Progress)</li>
+                    <li><strong>UI Path Basic</strong> – Certification </li>
+                </ul>
+                
+                <h3>Official Verification</h3>
+                <p>Click below to access academic transcripts and professional certifications locally hosted for review.</p>
+                <a href="transcript.pdf" target="_blank" class="btn btn-small">View Transcript</a>
+                <a href="uipathcertificate.pdf" target="_blank" class="btn btn-small">UI path cert</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Harmanpreet Singh | Student ID: 101591624 | COMP2148 Portfolio Assignment</p>
+    </footer>
+
+</body>
+</html>
