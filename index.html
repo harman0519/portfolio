@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio | Automation & Development</title>
+    <title>Harmanpreet Singh | Automation Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -17,7 +17,7 @@
 
         * { box-sizing: border-box; }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.7;
             color: var(--text-main);
             background-color: var(--bg-subtle);
@@ -25,7 +25,7 @@
             scroll-behavior: smooth;
         }
 
-        /* Upgrade 2: Navigation (Full Marks for Menu Bar) */
+        /* SECTION 5: Menu Bar / Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -57,7 +57,7 @@
 
         nav a:hover { color: var(--accent); }
 
-        /* Upgrade 3: Professional Bio/Hero */
+        /* SECTION 1: Profile / Hero */
         header {
             padding: 140px 10% 80px;
             background: linear-gradient(135deg, var(--primary) 0%, #3c6382 100%);
@@ -66,7 +66,7 @@
         }
 
         .hero-content h1 { font-size: 3rem; margin: 0; letter-spacing: -1px; }
-        .hero-content p { font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 20px auto; }
+        .hero-content p { font-size: 1.1rem; opacity: 0.9; max-width: 800px; margin: 20px auto; line-height: 1.6; }
 
         .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
 
@@ -87,25 +87,21 @@
             gap: 10px;
         }
 
-        h2::after {
-            content: "";
-            flex: 1;
-            height: 1px;
-            background: #ddd;
-        }
+        h2::after { content: ""; flex: 1; height: 1px; background: #ddd; }
 
-        /* Upgrade 1: Project Descriptions (Problem/Solution) */
+        /* SECTION 3: Work Samples */
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
         }
 
         .project-card {
             border: 1px solid #eee;
             border-radius: 12px;
-            overflow: hidden;
             transition: var(--transition);
+            background: #fff;
+            padding: 25px;
             display: flex;
             flex-direction: column;
         }
@@ -116,54 +112,38 @@
             border-color: var(--accent);
         }
 
-        .project-img {
-            width: 100%;
-            height: 200px;
-            background: #ddd;
-            object-fit: cover;
-        }
-
-        .project-body { padding: 25px; }
-        .project-body h3 { color: var(--primary); margin-top: 0; }
+        .meta-label { font-weight: bold; color: var(--accent); font-size: 0.75rem; text-transform: uppercase; display: block; margin-top: 10px; }
         
-        .meta-label { font-weight: bold; color: var(--accent); font-size: 0.8rem; text-transform: uppercase; }
-        .project-text { font-size: 0.95rem; margin-bottom: 15px; }
-
-        /* Skills/Resume Section */
-        .skills-flex {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 20px 0;
+        .gpa-badge {
+            background: var(--accent);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
         }
 
-        .skill-tag {
-            background: var(--bg-subtle);
-            padding: 8px 18px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-
+        /* Buttons */
         .btn {
             display: inline-block;
             background: var(--primary);
             color: white;
-            padding: 14px 28px;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
+            font-size: 0.9rem;
             transition: var(--transition);
+            text-align: center;
         }
 
-        .btn:hover { background: var(--accent); transform: scale(1.05); }
+        .btn:hover { background: var(--accent); transform: scale(1.02); }
+        .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); margin-top: auto; }
+        .btn-outline:hover { background: var(--primary); color: white; }
 
-        footer { text-align: center; padding: 50px; background: var(--primary); color: white; }
-
-        @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
-            section { padding: 30px 20px; }
-        }
+        footer { text-align: center; padding: 50px; background: var(--primary); color: white; margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -172,90 +152,81 @@
         <ul>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#resume">Resume</a></li>
-            <li><a href="#work">Work Samples</a></li>
+            <li><a href="#work">Projects</a></li>
             <li><a href="#education">Education</a></li>
         </ul>
     </nav>
 
     <header id="profile">
         <div class="hero-content">
-            <h1>[Your Name]</h1>
-            <p><strong>Automation Specialist & Solutions Developer</strong></p>
-            <p>Bridging the gap between complex manual workflows and streamlined digital efficiency using RPA and Low-Code technology.</p>
+            <h1>Harmanpreet Singh</h1>
+            <p>
+                I am a Computer Programming student specializing in automation and low-code development, 
+                focused on building scalable solutions that reduce manual workload and improve operational efficiency. 
+                My goal is to work as an Automation Developer where I can deliver measurable business impact 
+                through RPA and intelligent systems.
+            </p>
         </div>
     </header>
 
     <div class="container">
         
-        <section>
-            <h2><i class="fas fa-user-circle"></i> Professional Profile</h2>
-            <p>
-                I am a goal-oriented Technology student focused on high-impact business automation. 
-                With technical proficiency in <strong>UiPath, AI Builder, and AppSheet</strong>, I specialize in 
-                building applications that solve operational bottlenecks. My background combines 
-                rigorous academic training with practical compliance standards, including 
-                <strong>SafeCheck Advanced Food Safety</strong>, ensuring a disciplined approach 
-                to every technical project I undertake.
-            </p>
-        </section>
-
         <section id="resume">
-            <h2><i class="fas fa-file-alt"></i> Skills & Expertise</h2>
-            <div class="skills-flex">
-                <span class="skill-tag">UiPath RPA</span>
-                <span class="skill-tag">AppSheet Development</span>
-                <span class="skill-tag">AI Builder</span>
-                <span class="skill-tag">Data Logic</span>
-                <span class="skill-tag">Softr/No-Code</span>
-                <span class="skill-tag">Operational Compliance</span>
-            </div>
-            <p>My resume details my academic journey and technical projects tailored for efficiency-driven roles.</p>
-            <a href="resume.pdf" target="_blank" class="btn">Download Professional Resume</a>
+            <h2><i class="fas fa-file-pdf"></i> Resume & Skills</h2>
+            <p>Technically proficient in <strong>UiPath RPA Studio</strong>, <strong>Microsoft AI Builder</strong>, and <strong>No-Code App Platforms</strong>. Specialized in workflow optimization and systematic error reduction.</p>
+            <a href="resume.pdf" target="_blank" class="btn">Download Full Resume (PDF)</a>
         </section>
 
         <section id="work">
-            <h2><i class="fas fa-laptop-code"></i> Strategic Work Samples</h2>
+            <h2><i class="fas fa-layer-group"></i> Featured Projects</h2>
             <div class="project-grid">
                 
                 <div class="project-card">
-                    <img src="project1.png" class="project-img" alt="RPA Logic">
-                    <div class="project-body">
-                        <h3>Intelligent Data Extraction Bot</h3>
-                        <p class="project-text">
-                            <span class="meta-label">Problem:</span> Manual invoice entry was causing 15% error rates and wasting 10 hours/week.<br>
-                            <span class="meta-label">Solution:</span> Built a <strong>UiPath</strong> RPA bot with OCR to scrape data and sync with Excel.<br>
-                            <span class="meta-label">Result:</span> 100% data accuracy and zero manual intervention required for weekly reporting.
-                        </p>
-                    </div>
+                    <h3>RPA Data Extraction Bot</h3>
+                    <p class="project-text">
+                        <span class="meta-label">Problem:</span> High error rates in manual data entry from PDF invoices.
+                        <span class="meta-label">Solution:</span> Built a <strong>UiPath</strong> bot using OCR and Regex to automate data migration.
+                        <span class="meta-label">Result:</span> Reduced weekly labor by 8 hours with 100% data accuracy.
+                    </p>
+                    <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
                 </div>
 
                 <div class="project-card">
-                    <img src="project2.png" class="project-img" alt="Mobile App">
-                    <div class="project-body">
-                        <h3>Real-Time Inventory System</h3>
-                        <p class="project-text">
-                            <span class="meta-label">Problem:</span> Lack of visibility in stock levels leading to supply chain delays.<br>
-                            <span class="meta-label">Solution:</span> Developed a cross-platform <strong>AppSheet</strong> application with automated reorder triggers.<br>
-                            <span class="meta-label">Result:</span> Provided instant mobile access to stock data, reducing stock-outs by 40%.
-                        </p>
-                    </div>
+                    <h3>Inventory Management App</h3>
+                    <p class="project-text">
+                        <span class="meta-label">Problem:</span> Lack of real-time visibility causing stock-outs.
+                        <span class="meta-label">Solution:</span> Designed a mobile application via <strong>AppSheet</strong> with automated reorder alerts.
+                        <span class="meta-label">Result:</span> Increased supply chain visibility and eliminated stock-out delays.
+                    </p>
+                    <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Automated Support Desk</h3>
+                    <p class="project-text">
+                        <span class="meta-label">Problem:</span> Repetitive ticket routing taking up excessive IT time.
+                        <span class="meta-label">Solution:</span> Implemented <strong>AI Builder</strong> to route tickets automatically based on urgency.
+                        <span class="meta-label">Result:</span> Improved response time by 40% using intelligent logic.
+                    </p>
+                    <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
                 </div>
 
             </div>
         </section>
 
         <section id="education">
-            <h2><i class="fas fa-graduation-cap"></i> Education & Credentials</h2>
+            <h2><i class="fas fa-award"></i> Education & Official Records</h2>
             <div class="project-grid">
-                <div class="card" style="padding:0; border:none;">
-                    <h3>George Brown College</h3>
-                    <p>Computer Technology Program | Winter 2026</p>
-                    <a href="transcript.pdf" target="_blank" class="btn" style="padding:10px 20px; font-size:0.8rem;">View Transcript</a>
+                <div class="project-card">
+                    <span class="gpa-badge">GPA: 3.28</span>
+                    <h3>Academic Verification</h3>
+                    <p><strong>George Brown College</strong><br>Computer Technology | ID: 101591624</p>
+                    <a href="Transcript.pdf" target="_blank" class="btn btn-outline">View Transcript</a>
                 </div>
-                <div class="card" style="padding:0; border:none;">
-                    <h3>Professional Certifications</h3>
-                    <p>SafeCheck Advanced Food Safety Training</p>
-                    <a href="safecheck-cert.pdf" target="_blank" class="btn" style="padding:10px 20px; font-size:0.8rem;">View Certificate</a>
+                <div class="project-card">
+                    <h3>Technical Certification</h3>
+                    <p><strong>UiPath Certified Professional</strong><br>Foundations of Robotic Process Automation</p>
+                    <a href="uipathcerrification.pdf" target="_blank" class="btn btn-outline">View Certification</a>
                 </div>
             </div>
         </section>
@@ -263,7 +234,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 [Your Name] | Student ID: [Your ID] | COMP2148 Portfolio Submission</p>
+        <p>Harmanpreet Singh | Student ID: 101591624 | GPA: 3.28 | COMP2148 Assignment</p>
     </footer>
 
 </body>
