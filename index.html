@@ -183,39 +183,42 @@ footer {
 
 <div class="card">
 <h3>RPA Data Extraction Bot</h3>
-<p>Automated PDF invoice data extraction using UiPath OCR.<br>
--Automated PDF invoice data extraction using UiPath and OCR technology to eliminate manual data entry.<br>
--Extracted key invoice details such as vendor name, invoice number, date, and total amount.<br>
--Improved accuracy and reduced processing time through intelligent document processing.<br>
--Streamlined workflow by integrating extracted data into structured outputs for business use and reporting.</p>
+<p>1.Automated PDF invoice data extraction using UiPath OCR.<br>
+2.Automated PDF invoice data extraction using UiPath and OCR technology to eliminate manual data entry.<br>
+3.Extracted key invoice details such as vendor name, invoice number, date, and total amount.<br>
+4.Improved accuracy and reduced processing time through intelligent document processing.<br>
+5.Streamlined workflow by integrating extracted data into structured outputs for business use and reporting.</p>
 <a href="project1.pdf" class="btn" target="_blank">View Project PDF</a>
 
 </div>
 
 <div class="card">
 <h3>Inventory Management App</h3>
-<p>•Stock tracking system built using AppSheet and automation alerts.<br>
-•Developed a stock tracking system using AppSheet to monitor inventory levels in real time.<br>
-</p>
+<p>1.Stock tracking system built using AppSheet and automation alerts.<br>
+2.Developed a stock tracking system using AppSheet to monitor inventory levels in real time.<br>
+3.Implemented automated alert system to notify low-stock conditions and prevent shortages.<br>
+4.Enabled data-driven tracking with structured inventory updates and reporting features.</p>
 <a href="project2.pdf" class="btn" target="_blank">View Project PDF</a>
 
 </div>
 
 <div class="card">
 <h3>Automated Support Desk</h3>
-<p>•AI-based ticket routing system using Power Automate AI Builder.<br>
-•Built an Automated Support Desk system to streamline ticket creation, tracking, and resolution workflow.<br>
-•Automated ticket routing and assignment based on issue type and priority to improve response time.<br>
-</p>
+<p>AI-based ticket routing system using Power Automate AI Builder.<br>
+1.Built an Automated Support Desk system to streamline ticket creation, tracking, and resolution workflow.<br>
+2.Automated ticket routing and assignment based on issue type and priority to improve response time.<br>
+3.Integrated notification system for status updates and user communication.<br>
+4.Enhanced support efficiency by reducing manual handling and improving issue resolution tracking and organization.</p>
 <a href="project3.pdf" class="btn" target="_blank">View Project PDF</a>
 
 </div>
 
 <div class="card">
 <h3>Employee Training Tracker</h3>
-<p>•Developed an Employee Training Tracker to monitor training completion status across employees.<br>
-•Automated tracking of training records, progress updates, and completion status using structured workflows.<br>
-.</p>
+<p>1.Developed an Employee Training Tracker to monitor training completion status across employees.<br>
+2.Automated tracking of training records, progress updates, and completion status using structured workflows.<br>
+3.Implemented notification system to remind employees and managers about pending or overdue training.<br>
+4.Improved compliance and reporting efficiency by reducing manual tracking and ensuring accurate training records.</p>
 <a href="project4.pdf" class="btn" target="_blank">View Project PDF</a>
 
 </div>
@@ -278,7 +281,21 @@ Skills:<br>
 <p>Harmanpreet Singh | Automation Portfolio</p>
 </footer>
 
+<!-- ANIMATION SCRIPT -->
+<script>
+const sections = document.querySelectorAll("section");
 
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 500;
+
+        if (top > offset) {
+            sec.classList.add("show");
+        }
+    });
+});
+</script>
 
 </body>
 </html>
